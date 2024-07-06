@@ -1,4 +1,6 @@
-import { ImCart } from "react-icons/im";
+
+import { Link } from "react-router-dom";
+import { BsBagDash  } from "react-icons/im";
 
 const CartWidget = () => {
     return (

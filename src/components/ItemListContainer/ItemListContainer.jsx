@@ -7,10 +7,13 @@ import "./ItemListContainer.scss";
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
+    const [Loading, setLoading] = useState(false)
 
     const { idCategoria } = useParams();
 
     useEffect(() => {
+        //mostrar pantalla de carga
+        setLoading(true)
         obtenerProductos()
             .then((respuesta) => {
                 if (idCategoria) {
@@ -28,13 +31,14 @@ const ItemListContainer = () => {
                 console.log(error);
             })
             .finally(() => {
-                console.log("finalizo la promesa");
+                //oculto pantalla de carga
+                setLoading(false)
             });
     }, [idCategoria]);
 
     return (
         <div className="itemlistcontainer">
-            <ItemList productos={productos} />
+            {Loading ? <div>cargando...</div> : <ItemList productos={productos} />}
         </div>
     );
 };

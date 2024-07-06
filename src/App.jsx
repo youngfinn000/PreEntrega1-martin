@@ -9,8 +9,16 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <ItemListContainer  /> 
-      <ItemDetailContainer  />
+
+      <Routes>
+
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
+          <Route path="/detalle/:idProducto" element={<ItemDetailContainer />} />
+
+      </Routes>
+
+
     </BrowserRouter>
   );
 }
