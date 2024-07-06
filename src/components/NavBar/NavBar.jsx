@@ -11,9 +11,13 @@ const NavBar = () => {
     {/* agregar tipografia con google fonts */}
         <ul className="flex justify-center grow text-lg md:text-xl lg:text-2xl mx-4 md:mx-8 lg:mx-12">
             <li>-comida normal-</li>
+
             <li>-comida especial-</li>
+
             <li>-pociones-</li>
+
             <li>-combos-</li>
+            
         </ul>
 
         <CartWidget className="flex justify-end" />
