@@ -1,7 +1,7 @@
 import logoPaginaWeb from "../../img/logoPagina.jpg";
 import CartWidget from "./CartWidget";
 import "./NavBar.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (

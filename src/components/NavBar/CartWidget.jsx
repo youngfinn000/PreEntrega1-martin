@@ -1,11 +1,12 @@
 
 import { Link } from "react-router-dom";
-import { BsBagDash  } from "react-icons/im";
+import { FaCartShopping } from "react-icons/fa6";
 
 const CartWidget = () => {
     return (
     <div>
-        <ImCart size={35} color="black"/>
+    {/* <FaCartShopping /> */}
+
         <p>1</p>
     </div>
     )
