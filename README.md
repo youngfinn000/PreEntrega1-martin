@@ -12,12 +12,13 @@ En el carrito se observan los productos que hemos agregados, el precio total, y 
 
 ## Instalación
 1. Clona el repositorio:
+2. "https://github.com/youngfinn000/ProyectoFinalreactJS-martin.git"
    
 
-2. Instala las dependencias:
+3. Instala las dependencias:
    npm install
 
-3. Inicia la aplicación:
+4. Inicia la aplicación:
    npm start
 
 
