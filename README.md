@@ -18,7 +18,9 @@ En el carrito se observan los productos que hemos agregados, el precio total, y 
 3. Instala las dependencias:
    npm install
 
-4. Inicia la aplicación:
+   https://proyecto-finalreact-js-martin.vercel.app/
+
+5. Inicia la aplicación:
    npm start
 
 
