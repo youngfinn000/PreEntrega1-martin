@@ -22,11 +22,6 @@ En el carrito se observan los productos que hemos agregados, el precio total, y 
 4. Inicia la aplicación:
    npm start
 
-   https://proyecto-finalreact-js-martin.vercel.app/
-
-
-
-
 
    https://proyecto-finalreact-js-martin.vercel.app/
 
