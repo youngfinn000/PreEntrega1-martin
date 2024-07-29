@@ -1,13 +1,26 @@
-Proyecto realizado por Laureano Martin Falcon.
-# React + Vite
+# bazarWeb
+App e-commerce, se pueden ver los productos que se ofrecen, y 2 categorías de ejemplo que filtran estos productos
+Se puede ver un detalle mayor de los productos y agregarlos al carrito para completar la compra.
+En el carrito se observan los productos que hemos agregados, el precio total, y un formulario de compra final.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologías Utilizadas
+* firebase: ^10.12.3
+* react: ^18.2.0
+* react-dom: ^18.2.0
+* react-router-dom: ^6.23.1
+* sass: ^1.77.2
 
-Currently, two official plugins are available:
+## Instalación
+1. Clona el repositorio:
+   
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# proyectoConReactJs
+2. Instala las dependencias:
+   npm install
 
-// npm run dev //en la consola, cada vez que abro el proyecto y comienzo a trabajar 
+3. Inicia la aplicación:
+   npm start
+
+
+
+
 

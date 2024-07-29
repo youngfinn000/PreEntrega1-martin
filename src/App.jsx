@@ -1,26 +1,19 @@
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Main from "./components/Main.jsx";
+import { BrowserRouter } from "react-router-dom";
+import CartContext from "./components/CartContext.jsx";
 
 function App() {
-
   return (
     <BrowserRouter>
-      <NavBar />
-
-      <Routes>
-
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
-          <Route path="/detalle/:idProducto" element={<ItemDetailContainer />} />
-
-      </Routes>
-
-
+      <CartContext>
+        <Header />
+        <Main />
+        <Footer />
+      </CartContext>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

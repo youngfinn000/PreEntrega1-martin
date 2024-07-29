@@ -1,0 +1,251 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #333; /* Color de texto principal */
+  background-color: #dedede; /* Color de fondo principal */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn{
+  background-color: #007bff; /* Color de botón */
+}
+
+a{
+  color: #0099ff; /* Color de enlaces */
+  padding: 5px;
+  margin-left: 20px;
+}
+
+h1{
+  color: #ff0000; /* Color de títulos principales */
+}
+
+h2{
+  color: #007bff; /* Color de títulos secundarios */
+}
+
+.logo1{
+  width: 100px;
+  margin-right: 25px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+p{
+  color: #666; /* Color de texto secundario */
+}
+
+.cart-widget {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #0099ff; /* Color de carrito */
+  margin-left: 385px;
+}
+
+.bienvenido{
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ff0000; /* Color de texto de bienvenida */
+}
+
+.precio-detalle{
+  color: #007bff; /* Color de precio */
+  font-size: 25px;
+}
+
+.items-carrito{
+  color: #0099ff; /* Color de items en carrito */
+}
+
+.carrito1{
+  width: 35px;
+}
+
+.total-carrito{
+  color: #ff0000; /* Color de total en carrito */
+  font-size: 45px;
+}
+
+.griditems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f7f7f7; /* Color de fondo de items en grid */
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 90%
+}
+
+.grid-item img {
+  max-width: 100%;
+}
+
+.grid-item h2 {
+  color: #666; /* Color de títulos en items en grid */
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.grid-item p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #007bff; /* Color de texto en items en grid */
+}
+
+.cart-count {
+  color: #0099ff; /* Color de contador de carrito */
+  font-weight: bold;
+  position: relative;
+  top: 28px;
+  left: -5px;
+}
+
+form label {
+  color: #0099ff; /* Color de etiquetas en formularios */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+.btn-cc {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007bff; /* Color de botón en formularios */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.textoboton {
+  color: #0099ff; /* Color de texto en botones */
+}
+
+.IQC-1 {
+  color: #0099ff; /* Color de texto en IQC-1 */
+}
+
+.addToCartButton {
+  background-color: #007bff; /* Color de botón de agregar al carrito */
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.carrito {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #444; /* Color de fondo del carrito */
+  border: 1px solid #666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000; /* Color de título del carrito */
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #666;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .items-carrito {
+        font-size: 18px;
+        color: #0099ff; /* Color de items en carrito */
+      }
+    }
+  }
+
+  .total-carrito {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000; /* Color de total en carrito */
+    margin-top: 20px;
+  }
+
+  form {
+    margin-top: 20px;
+
+    div {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #0099ff; /* Color de etiquetas en formularios */
+      }
+
+      input[type="text"], input[type="email"] {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #666;
+      }
+
+      .error {
+        color: #f00;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #007bff; /* Color de botón en formularios */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0069d9;
+      }
+    }
+  }
+}
